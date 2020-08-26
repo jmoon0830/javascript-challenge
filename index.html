@@ -30,13 +30,22 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">
+                <label for="filter">Select a filter:</label>
+                <select name="filter" id="filter-drop">
+                  <option id="filter1" value="date">Date</option>
+                  <option id="filter2" value="city">City</option>
+                  <option id="filter3" value="state">State</option>
+                  <option id="filter4" value="country">Country</option>
+                  <option id="filter5" value="shape">Shape</option>
+                </select>
+              </div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
+                        <label for="date" id="filter-label">Enter a Date</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                       </li>
                     </ul>
@@ -72,8 +81,8 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+  <script src="UFO-level-2/static/js/data.js"></script>
+  <script src="UFO-level-2/static/js/app.js"></script>
 </body>
 
 </html>
